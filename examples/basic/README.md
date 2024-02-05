@@ -1,11 +1,11 @@
-# Basic example
+# Basic Example
 
-<!--
-The basic example should call the module(s) stored in this repository with a basic configuration.
-Note, there is a pre-commit hook that will take the title of each example and include it in the repos main README.md.
-The text below should describe exactly what resources are provisioned / configured by the example.
--->
+A basic example that shows how to create multiple namespaces (projects) with custom annotations and labels in an OCP cluster.
 
-An end-to-end basic example that will provision the following:
-- A new resource group if one is not passed in.
-- A new Cloud Object Storage instance.
+The following resources are provisioned by this example:
+
+- A new resource group, if an existing one is not passed in.
+- A basic VPC.
+- An OCP VPC cluster.
+
+The namespace module then runs and creates project(s) in the OCP cluster.
