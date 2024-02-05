@@ -38,18 +38,9 @@ https://terraform-ibm-modules.github.io/documentation/#/implementation-guideline
 -->
 <!-- ## Reference architectures -->
 
-
-<!-- This heading should always match the name of the root level module (aka the repo name) -->
 ## terraform-ibm-namespace-module
 
 ### Usage
-
-<!--
-Add an example of the use of the module in the following code block.
-
-Use real values instead of "var.<var_name>" or other placeholder values
-unless real values don't help users know what to change.
--->
 
 ```hcl
 ##############################################################################
@@ -78,9 +69,9 @@ provider "kubernetes" {
 # Namespace Module
 ##############################################################################
 
-# Replace "master" with a GIT release version to lock into a specific release
+# Replace "main" with a GIT release version to lock into a specific release
 module "namespace" {
-  source =  "git::https://github.ibm.com/GoldenEye/namespace-module.git?ref=master"
+  source =  "git@github.com:terraform-ibm-modules/terraform-ibm-namespace-module.git?ref=main"
   namespaces = [
     {
       name = "my-namespace"
@@ -116,16 +107,6 @@ You need the following permissions to run this module.
   - **Kubernetes** service
       - `Viewer` platform access
       - `Manager` service access
-
-For more information about the access you need to run all the GoldenEye modules, see [GoldenEye IAM permissions](https://github.ibm.com/GoldenEye/documentation/blob/master/goldeneye-iam-permissions.md).
-
-<!-- NO PERMISSIONS FOR MODULE
-If no permissions are required for the module, uncomment the following
-statement instead the previous block.
--->
-
-<!-- No permissions are needed to run this module.-->
-
 
 <!-- Below content is automatically populated via pre-commit hook -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
