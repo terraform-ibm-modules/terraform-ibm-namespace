@@ -1,4 +1,4 @@
-# Basic Example
+# Basic example
 
 A basic example that shows how to create multiple namespaces (projects) with custom annotations and labels in an OCP cluster.
 

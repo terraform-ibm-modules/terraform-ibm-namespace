@@ -1,13 +1,7 @@
-<!-- Update the title -->
-# Namespace Modules
+# Namespace module
 
-<!--
-Update status and "latest release" badges:
-  1. For the status options, see https://terraform-ibm-modules.github.io/documentation/#/badge-status
-  2. Update the "latest release" badge to point to the correct module's repo. Replace "terraform-ibm-module-template" in two places.
--->
 [![Graduated (Supported)](https://img.shields.io/badge/Status-Graduated%20(Supported)-brightgreen)](https://terraform-ibm-modules.github.io/documentation/#/badge-status)
-[![latest release](https://img.shields.io/github/v/release/terraform-ibm-modules/terraform-ibm-namespace-module?logo=GitHub&sort=semver)](https://github.com/terraform-ibm-modules/terraform-ibm-namespace-module/releases/latest)
+[![latest release](https://img.shields.io/github/v/release/terraform-ibm-modules/terraform-ibm-namespace?logo=GitHub&sort=semver)](https://github.com/terraform-ibm-modules/terraform-ibm-namespace/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
@@ -15,31 +9,16 @@ Update status and "latest release" badges:
 <!-- Add a description of module(s) in this repo -->
 This module supports creating multiple Kubernetes namespaces / OpenShift projects with optional annotations and labels.
 
-## Compliance and security
-
-NIST controls do not apply to this module.
-
 <!-- Below content is automatically populated via pre-commit hook -->
 <!-- BEGIN OVERVIEW HOOK -->
 ## Overview
 * [terraform-ibm-namespace](#terraform-ibm-namespace)
 * [Examples](./examples)
-    * [Basic Example](./examples/basic)
+    * [Basic example](./examples/basic)
     * [Create Namespace on the existing cluster example](./examples/create-namespaces-existing-cluster)
 * [Contributing](#contributing)
 <!-- END OVERVIEW HOOK -->
 
-
-<!--
-If this repo contains any reference architectures, uncomment the heading below and links to them.
-(Usually in the `/reference-architectures` directory.)
-See "Reference architecture" in Authoring Guidelines in the public documentation at
-https://terraform-ibm-modules.github.io/documentation/#/implementation-guidelines?id=reference-architecture
--->
-<!-- ## Reference architectures -->
-
-
-<!-- This heading should always match the name of the root level module (aka the repo name) -->
 ## terraform-ibm-namespace
 
 ### Usage
@@ -68,12 +47,12 @@ provider "kubernetes" {
 }
 
 ##############################################################################
-# Namespace Module
+# Namespace module
 ##############################################################################
 
 # Replace "main" with a GIT release version to lock into a specific release
 module "namespace" {
-  source            = "terraform-ibm-modules/namespace-module/ibm"
+  source            = "terraform-ibm-modules/namespace/ibm"
   version           = "X.X.X" # Replace "X.X.X" with a release version to lock into a specific
   namespaces = [
     {
