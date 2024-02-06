@@ -50,7 +50,6 @@ provider "kubernetes" {
 # Namespace module
 ##############################################################################
 
-# Replace "main" with a GIT release version to lock into a specific release
 module "namespace" {
   source            = "terraform-ibm-modules/namespace/ibm"
   version           = "X.X.X" # Replace "X.X.X" with a release version to lock into a specific
