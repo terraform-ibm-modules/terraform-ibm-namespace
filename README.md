@@ -22,7 +22,7 @@ NIST controls do not apply to this module.
 <!-- Below content is automatically populated via pre-commit hook -->
 <!-- BEGIN OVERVIEW HOOK -->
 ## Overview
-* [terraform-ibm-namespace-module](#terraform-ibm-namespace-module)
+* [terraform-ibm-namespace](#terraform-ibm-namespace)
 * [Examples](./examples)
     * [Basic Example](./examples/basic)
     * [Create Namespace on the existing cluster example](./examples/create-namespaces-existing-cluster)
@@ -38,7 +38,9 @@ https://terraform-ibm-modules.github.io/documentation/#/implementation-guideline
 -->
 <!-- ## Reference architectures -->
 
-## terraform-ibm-namespace-module
+
+<!-- This heading should always match the name of the root level module (aka the repo name) -->
+## terraform-ibm-namespace
 
 ### Usage
 

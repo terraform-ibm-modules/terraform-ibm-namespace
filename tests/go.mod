@@ -1,4 +1,4 @@
-module github.com/terraform-ibm-modules/terraform-ibm-namespace-module
+module github.com/terraform-ibm-modules/terraform-ibm-namespace
 
 go 1.21
 
