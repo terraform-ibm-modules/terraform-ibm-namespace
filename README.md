@@ -71,7 +71,8 @@ provider "kubernetes" {
 
 # Replace "main" with a GIT release version to lock into a specific release
 module "namespace" {
-  source =  "git@github.com:terraform-ibm-modules/terraform-ibm-namespace-module.git?ref=main"
+  source            = "terraform-ibm-modules/namespace-module/ibm"
+  version           = "X.X.X" # Replace "X.X.X" with a release version to lock into a specific
   namespaces = [
     {
       name = "my-namespace"
