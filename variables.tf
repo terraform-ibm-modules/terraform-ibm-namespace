@@ -1,9 +1,14 @@
-########################################################################################################################
+##############################################################################
 # Input Variables
-########################################################################################################################
+##############################################################################
 
-#variable "my_variable" {
-#  type        = string
-#  description = "A description of my variable"
-#  default     = "default_value"
-#}
+variable "namespaces" {
+  type = list(object({
+    name = string
+    metadata = optional(object({
+      labels      = map(string)
+      annotations = map(string)
+    }))
+  }))
+  description = "Set of namespaces to create"
+}
