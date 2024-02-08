@@ -25,4 +25,4 @@ repository:
   description: "Configures a Kubernetes namespace or Openshift project."
 
   # Use a comma-separated list of topics to set on the repo (ensure not to use any caps in the topic string).
-  topics: terraform, ibm-cloud, terraform-module
+  topics: terraform, namespace, core-team, ibm-cloud, terraform-module, supported, graduated, project, kubernetes, openshift
