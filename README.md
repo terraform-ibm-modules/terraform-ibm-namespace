@@ -112,7 +112,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_namespaces"></a> [namespaces](#input\_namespaces) | Set of namespaces to create | <pre>list(object({<br>    name = string<br>    metadata = optional(object({<br>      labels      = map(string)<br>      annotations = map(string)<br>    }))<br>  }))</pre> | n/a | yes |
+| <a name="input_namespaces"></a> [namespaces](#input\_namespaces) | Set of namespaces to create | <pre>list(object({<br/>    name = string<br/>    metadata = optional(object({<br/>      labels      = map(string)<br/>      annotations = map(string)<br/>    }))<br/>  }))</pre> | n/a | yes |
 
 ### Outputs
 
