@@ -14,8 +14,8 @@ This module supports creating multiple Kubernetes namespaces / OpenShift project
 ## Overview
 * [terraform-ibm-namespace](#terraform-ibm-namespace)
 * [Examples](./examples)
-    * [Basic example](./examples/basic)
-    * [Create Namespace on the existing cluster example](./examples/create-namespaces-existing-cluster)
+    * <div style="display: inline-block;"><a href="./examples/basic">Basic example</a></div> <div style="display: inline-block; vertical-align: middle;"><a href="https://cloud.ibm.com/schematics/workspaces/create?workspace_name=namespace-basic-example&repository=https://github.com/terraform-ibm-modules/terraform-ibm-namespace/tree/main/examples/basic" target="_blank"><img src="https://cloud.ibm.com/media/docs/images/icons/Deploy_to_cloud.svg" alt="Deploy to IBM Cloud button"></a></div>
+    * <div style="display: inline-block;"><a href="./examples/create-namespaces-existing-cluster">Create Namespace on the existing cluster example</a></div> <div style="display: inline-block; vertical-align: middle;"><a href="https://cloud.ibm.com/schematics/workspaces/create?workspace_name=namespace-create-namespaces-existing-cluster-example&repository=https://github.com/terraform-ibm-modules/terraform-ibm-namespace/tree/main/examples/create-namespaces-existing-cluster" target="_blank"><img src="https://cloud.ibm.com/media/docs/images/icons/Deploy_to_cloud.svg" alt="Deploy to IBM Cloud button"></a></div>
 * [Contributing](#contributing)
 <!-- END OVERVIEW HOOK -->
 
