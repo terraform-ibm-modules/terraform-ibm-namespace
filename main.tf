@@ -4,7 +4,7 @@
 # Creates kubernetes namespaces
 ##############################################################################
 
-resource "kubernetes_namespace" "create_namespace" {
+resource "kubernetes_namespace_v1" "create_namespace" {
   for_each = { for namespace in var.namespaces : namespace.name => namespace }
   metadata {
     name        = each.value.name
