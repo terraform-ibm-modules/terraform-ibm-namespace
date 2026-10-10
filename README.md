@@ -107,7 +107,7 @@ You need the following permissions to run this module.
 ### Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.0 |
 | <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | >= 3.0.0, < 4.0.0 |
 
@@ -118,13 +118,13 @@ No modules.
 ### Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [kubernetes_namespace_v1.create_namespace](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace_v1) | resource |
 
 ### Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_namespaces"></a> [namespaces](#input\_namespaces) | Set of namespaces to create | <pre>list(object({<br/>    name = string<br/>    metadata = optional(object({<br/>      labels      = map(string)<br/>      annotations = map(string)<br/>    }))<br/>  }))</pre> | n/a | yes |
 
 ### Outputs
